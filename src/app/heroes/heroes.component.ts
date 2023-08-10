@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Hero } from '../hero';
 @Component({
   standalone: true,
   selector: 'app-heroes',
@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./heroes.component.css'],
 })
 export class HeroesComponent implements OnInit {
+  hero: Hero = {
+    id: 1,
+    name: 'rohan',
+  };
   constructor() {}
 
   ngOnInit() {}
