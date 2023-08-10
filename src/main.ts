@@ -7,14 +7,13 @@ import { AppComponent } from './app/app.component';
 @Component({
   selector: 'my-app',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,AppComponent],
   template: `
     <h1>Hello from {{name}}!</h1>
     <a target="_blank" href="https://angular.io/start">
       Learn more about Angular 
     </a>
   `,
-  imports: [AppComponent],
 })
 export class App {
   name = 'Angular';
