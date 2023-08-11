@@ -6,13 +6,12 @@
   <label for="name">Hero name: </label>
   <input id="name" [(ngModel)]="hero.name" placeholder="name" />
 </div> -->
-<h2>
-  <ul>
-    <li>
-      <button type="button">
-        <span class="badge"></span>
-        <span class="name"></span>
-      </button>
-    </li>
-  </ul>
-</h2>
+<h2>Tour of heroes</h2>
+<ul class="heroes">
+  <li *ngFor="let hero of heroes">
+    <button type="button">
+      <span class="badge"> {{ hero.id }} </span>
+      <span class="name">{{ hero.name }}</span>
+    </button>
+  </li>
+</ul>

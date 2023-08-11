@@ -12,10 +12,10 @@ import { HEROES } from '../mock-heroes';
   imports: [CommonModule, FormsModule],
 })
 export class HeroesComponent implements OnInit {
-  // hero: Hero = {
-  //   id : 1,
-  //   name : 'vinay'
-  // }
+  hero: Hero = {
+    id: 1,
+    name: 'rohan',
+  };
   heroes = HEROES;
 
   constructor() {}
