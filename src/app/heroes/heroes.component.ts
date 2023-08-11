@@ -9,7 +9,7 @@ import { HEROES } from '../mock-heroes';
   selector: 'app-heroes',
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css'],
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule],
 })
 export class HeroesComponent implements OnInit {
   // hero: Hero = {
@@ -17,12 +17,12 @@ export class HeroesComponent implements OnInit {
   //   name: 'rohan',
   // };
   // heroes = HEROES;
-  @Input() hero!: Hero;
 
+  heroes = HEROES;
+  selectedHero?: Hero;
   constructor() {}
-  getEven() {
-    return this.hero.id % 2 != 0;
+  onSelect(hero: Hero) {
+    this.selectedHero = hero;
   }
-
   ngOnInit() {}
 }
