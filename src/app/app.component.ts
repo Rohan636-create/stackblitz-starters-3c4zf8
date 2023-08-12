@@ -9,7 +9,7 @@ import { HEROES } from './mock-heroes';
   selector: 'app-app',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [HeroesComponent, CommonModule, HeroDetailsComponent],
+  imports: [HeroesComponent, CommonModule],
 })
 export class AppComponent implements OnInit {
   title = 'Tour of Heroes';
