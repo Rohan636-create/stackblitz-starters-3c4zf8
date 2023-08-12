@@ -3,6 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Hero } from '../hero';
 import { HEROES } from '../mock-heroes';
+import { HeroDetailsComponent } from './hero-details/hero-details.component';
 
 @Component({
   standalone: true,
